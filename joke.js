@@ -23,4 +23,11 @@ fetch("https://v2.jokeapi.dev/joke/Any?safe-mode")
 		});
 	});
     
-	
+	document.getElementById("pun").addEventListener ('click',function() {
+		fetch("https://v2.jokeapi.dev/joke/pun?safe-mode")
+		.then(response => response.json())
+		.then(data => {
+			console.log(data);
+			joke.textContent = data.joke || data.setup + data.delivery
+		});
+	});
