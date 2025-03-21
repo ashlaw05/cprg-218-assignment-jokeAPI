@@ -13,4 +13,14 @@ fetch("https://v2.jokeapi.dev/joke/Any?safe-mode")
 			joke.textContent = data.joke || data.setup + data.delivery
 		});
 	});
+
+	document.getElementById("misc").addEventListener ('click',function() {
+		fetch("https://v2.jokeapi.dev/joke/misc?safe-mode")
+		.then(response => response.json())
+		.then(data => {
+			console.log(data);
+			joke.textContent = data.joke || data.setup + data.delivery
+		});
+	});
     
+	
