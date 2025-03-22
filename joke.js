@@ -11,6 +11,7 @@ fetch("https://v2.jokeapi.dev/joke/Any?safe-mode")
 		.then(data => {
 			console.log(data);
 			joke.textContent = data.joke || data.setup + data.delivery
+			title.textContent = "A random Programming joke"
 		});
 	});
 
@@ -20,6 +21,7 @@ fetch("https://v2.jokeapi.dev/joke/Any?safe-mode")
 		.then(data => {
 			console.log(data);
 			joke.textContent = data.joke || data.setup + data.delivery
+			title.textContent = "A random Misc joke"
 		});
 	});
     
@@ -29,6 +31,7 @@ fetch("https://v2.jokeapi.dev/joke/Any?safe-mode")
 		.then(data => {
 			console.log(data);
 			joke.textContent = data.joke || data.setup + data.delivery
+			title.textContent = "A random Pun"
 		});
 	});
 
@@ -38,6 +41,7 @@ fetch("https://v2.jokeapi.dev/joke/Any?safe-mode")
 		.then(data => {
 			console.log(data);
 			joke.textContent = data.joke || data.setup + data.delivery
+			title.textContent = "A random Spooky joke"
 		});
 	});
 
@@ -47,5 +51,6 @@ fetch("https://v2.jokeapi.dev/joke/Any?safe-mode")
 		.then(data => {
 			console.log(data);
 			joke.textContent = data.joke || data.setup + data.delivery
+			title.textContent = "A random Christmas joke"
 		});
 	});
