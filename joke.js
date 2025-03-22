@@ -31,3 +31,12 @@ fetch("https://v2.jokeapi.dev/joke/Any?safe-mode")
 			joke.textContent = data.joke || data.setup + data.delivery
 		});
 	});
+
+	document.getElementById("spooky").addEventListener ('click',function() {
+		fetch("https://v2.jokeapi.dev/joke/spooky?safe-mode")
+		.then(response => response.json())
+		.then(data => {
+			console.log(data);
+			joke.textContent = data.joke || data.setup + data.delivery
+		});
+	});
