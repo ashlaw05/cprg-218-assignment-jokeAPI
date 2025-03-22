@@ -2,7 +2,7 @@ fetch("https://v2.jokeapi.dev/joke/Any?safe-mode")
 	.then(response => response.json())
 	.then(data => {
 		console.log(data);
-		joke.textContent = data.joke || data.setup + data.delivery
+		joke.textContent = data.joke || data.setup + "..." + data.delivery
 	});
 
 	document.getElementById("programming").addEventListener ('click',function() {
@@ -10,7 +10,7 @@ fetch("https://v2.jokeapi.dev/joke/Any?safe-mode")
 		.then(response => response.json())
 		.then(data => {
 			console.log(data);
-			joke.textContent = data.joke || data.setup + data.delivery
+			joke.textContent = data.joke || data.setup + "..." + data.delivery
 			title.textContent = "A random Programming joke"
 		});
 	});
@@ -20,7 +20,7 @@ fetch("https://v2.jokeapi.dev/joke/Any?safe-mode")
 		.then(response => response.json())
 		.then(data => {
 			console.log(data);
-			joke.textContent = data.joke || data.setup + data.delivery
+			joke.textContent = data.joke || data.setup + "..." + data.delivery
 			title.textContent = "A random Misc joke"
 		});
 	});
@@ -30,7 +30,7 @@ fetch("https://v2.jokeapi.dev/joke/Any?safe-mode")
 		.then(response => response.json())
 		.then(data => {
 			console.log(data);
-			joke.textContent = data.joke || data.setup + data.delivery
+			joke.textContent = data.joke || data.setup + "..." + data.delivery
 			title.textContent = "A random Pun"
 		});
 	});
@@ -40,7 +40,7 @@ fetch("https://v2.jokeapi.dev/joke/Any?safe-mode")
 		.then(response => response.json())
 		.then(data => {
 			console.log(data);
-			joke.textContent = data.joke || data.setup + data.delivery
+			joke.textContent = data.joke || data.setup + "..." + data.delivery
 			title.textContent = "A random Spooky joke"
 		});
 	});
@@ -50,7 +50,7 @@ fetch("https://v2.jokeapi.dev/joke/Any?safe-mode")
 		.then(response => response.json())
 		.then(data => {
 			console.log(data);
-			joke.textContent = data.joke || data.setup + data.delivery
+			joke.textContent = data.joke || data.setup + "..." + data.delivery
 			title.textContent = "A random Christmas joke"
 		});
 	});
